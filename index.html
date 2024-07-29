@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <main>
+      <div class="mortage-container">
+          <!------------------------------------------------------------------------------------------->
+          <!-- Input Section -->
+          <section class="input-section">
+              <div class="input-header">
+                <div class="header-logo">
+                    <h3>Mortgage Calculator</h3>
+                </div>
+                <a href="javascript:void(0)" id="clear-all-btn">Clear All</a>
+              </div>
+
+              <div class="input-field">
+
+                <!--Mortgage Amount Field-->
+                <div class="mortage-amount-field">
+                 
+                  <div class="field-title">
+                    <h4>Mortgage Amount</h4>
+                  </div>
+
+                  <div class="amount-field">
+                      <div class="field-logo"><p>£</p></div>
+                      <input type="number" name="mortage-amount" id="amount-field-input">
+                  </div>
+                  <span class="error-msg">This field is required </span>
+                  
+                </div>
+                
+                <!--Term And Rate Field-->
+                <div class="mortage-term-rate-field">
+
+                  <!--Term Field-->
+                    <div class="term-field-side">
+                        
+                      <div class="field-title">
+                          <h4>Mortgage Term</h4>
+                        </div>
+
+                        <div class="term-field">
+                          <input type="number" name="term-input" id="term-field-input">
+                          <div class="field-logo"><p>years</p></div>
+                        </div>
+                        <span class="error-msg">This field is required </span>
+                    
+                      </div>
+
+                    <!--Interest Field-->
+                    <div class="interest-field-side">
+                      <div class="field-title">
+                        <h4>Interest Rate</h4>
+                      </div>
+                      <div class="interest-field">
+                        <input type="number" name="interest-input" id="interest-field-input">
+                        <div class="field-logo "><p>%</p></div>
+                      </div>
+                      <span class="error-msg">This field is required </span>
+                    </div>
+                </div>
+
+                <!--Mortgage Type Field-->
+                <div class="mortage-type-field">
+                   <div class="type-field-title">
+                      <h4>Mortgage Type</h4>
+                   </div>
+                   
+                   <!-- Mortgage Type Field -->
+                   <div class="mortage-types">
+                      <div class="mortage-type-btn" onclick="document.getElementById('repayment-radio-btn').click();">
+                        <input type="radio" name="mortgage-type" id="repayment-radio-btn">
+                        <h3>Repayment</h3>
+                      </div>
+                      <div class="mortage-type-btn" onclick="document.getElementById('interest-radio-btn').click();">
+                        <input type="radio" name="mortgage-type" id="interest-radio-btn">
+                        <h3>Interest Only</h3>
+                      </div>
+                      <span class="error-msg">This field is required </span>
+                   </div>
+                </div>
+                
+                <!-- Calculate Button -->
+                <div class="calculate-btn-field">
+                  <a href="javascript:void(0)" id="calculate-mortage-btn">
+                    <img src="assets/images/icon-calculator.svg"  width="20" alt="calculate-button">
+                    <p>Calculate Repayments</p>
+                  </a>
+                </div>
+
+              </div>
+          </section>
+
+          <!-- Input Section End -->
+          
+          <!------------------------------------------------------------------------------------------->
+          
+          <!-- Results Section -->
+          <section class="results-section">
+
+              <!--Info Banner-->
+              <div class="info-banner">
+
+                <!-- Info Banner Title -->
+                <div class="info-banner-title">
+                  <img src="assets/images/illustration-empty.svg" alt="banner-logo">
+                </div>
+
+                <!--Info Banner Content-->
+                <div class="info-banner-content">
+                    <h2>Results shown here</h2>
+                    <p>  Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+                </div>
+
+              </div>
+          </section>
+          <!-- Results Section End-->
+          
+          <!------------------------------------------------------------------------------------------->
+
+      </div>      
+  </main>
+</body>
+</html>
